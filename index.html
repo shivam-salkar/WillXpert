@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <title>WillExpert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/2ee72c07a9.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <nav
+      class="z-50 fixed left-0 top-0 w-full flex items-center justify-between bg-dark-blue text-white p-5 font-jockey-one">
+      <div>
+        <a href="" class="text-4xl">WillXpert</a>
+      </div>
+      <div class="hidden md:flex items-center justify-center gap-20">
+        <a href="#home" class="text-3xl underline-animate">Home</a>
+        <a href="#about" class="text-3xl underline-animate">About</a>
+        <a href="#service" class="text-3xl underline-animate">Services</a>
+        <a href="#contact" class="text-3xl underline-animate">Contact</a>
+      </div>
+
+      <button
+        id="menu-button"
+        class="flex items-center justify-center text-4xl md:hidden">
+        <i class="bx bx-menu"></i>
+      </button>
+    </nav>
+
+    <!-- DROPDOWN HAMBURGER -->
+    <div
+      id="menu"
+      class="fixed top-16 left-0 w-full flex flex-col bg-dark-blue items-center text-white font-jockey-one p-3 z-50 opacity-0 scale-y-0 origin-top transition-all duration-200 ease-out pointer-events-none">
+      <a href="#home" class="text-3xl underline-animate m-3">Home</a>
+      <a href="#about" class="text-3xl underline-animate m-3">About</a>
+      <a href="#service" class="text-3xl underline-animate m-3">Services</a>
+      <a href="#contact" class="text-3xl underline-animate m-3">Contact</a>
+    </div>
+
+    <!-- HOME -->
+    <section
+      id="home"
+      class="flex flex-col md:flex-row items-center justify-center p-10 pt-40 bg-cover bg-center bg-no-repeat relative min-h-[100vh]"
+      style="background-image: url(assets/legal-image.jpeg)">
+      <!-- Left: Text -->
+      <div
+        class="scroll-animate opacity-0 flex flex-col items-center justify-center text-center md:text-left md:w-1/2 space-y-6 text-white">
+        <h1
+          class="text-5xl md:text-8xl font-medium font-jockey-one text-center">
+          Will and Estate
+          <br />
+          Writing Services
+        </h1>
+        <p
+          class="text-lg md:text-2xl text-gray-300 font-jockey-one text-center">
+          Trusted Legal Expertise with Over 20 Years of Experience...
+        </p>
+        <a
+          href="#service"
+          class="px-6 py-3 bg-dark-blue text-white rounded-xl hover:bg-darker-blue font-jockey-one transition">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Right: Image -->
+      <div
+        class="mt-10 w-1/2 md:mt-0 md:w-1/3 flex justify-center animate-bounce-slow z-49">
+        <img
+          src="assets\last-will (1).png"
+          alt="Hero"
+          class="w-full max-w-md md:max-w-lg" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section
+      id="about"
+      class="scroll-animate opacity-0 mt-5 md:mt-20 flex flex-col md:flex-row items-center justify-center pb-10 p-3 pt-10 md:p-20 scroll-mt-40">
+      <div>
+        <h1
+          class="text-4xl sm:text-6xl md:text-8xl font-jockey-one text-dark-blue text-center underline decoration-dark-blue">
+          ABOUT US
+        </h1>
+
+        <hr class="w-full mt-15 border-2" />
+
+        <div class="flex">
+          <!-- <img src="/assets/lawyer.jpg" alt="" class="rounded-full w-30 h-30"> -->
+          <p
+            class="text-[20px] md:text-4xl font-sans font-medium text-center text-pretty mt-10">
+            With a strong foundation of more than 20+ years in corporate legal
+            services, we offer a comprehensive range of solutions in Will
+            drafting, property transfers, estate planning, and private family
+            trusts.
+            <br />
+            <br />
+
+            Over the years, the expertise developed spans across complex legal
+            structures, corporate compliance, and personal asset protection,
+            enabling clients to receive both professional accuracy and practical
+            guidance.
+            <br />
+            <br />
+
+            The approach remains centered on clarity, confidentiality, and
+            commitment to client interests. Each matter is handled with care,
+            ensuring individuals and families secure their future while
+            navigating legal complexities with ease.
+            <br />
+            <br />
+          </p>
+        </div>
+        <hr class="w-full mt-15 border-2" />
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section
+      id="service"
+      class="bg-dark-blue mt-10 md:mt-40 p-6 sm:p-10 scroll-mt-40">
+      <h1
+        class="text-4xl sm:text-6xl md:text-8xl font-jockey-one text-white text-center underline decoration-white mb-10 scroll-animate opacity-0">
+        OUR SERVICES
+      </h1>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-[80vw] mx-auto mb-20 md:mb-40 scroll-animate opacity-0">
+        <!-- Card 1 -->
+        <div
+          class="hover:bg-gray-100 bg-white shadow-2xl rounded-4xl p-12 flex flex-col-reverse md:flex-row items-center md:justify-center text-center md:text-left scroll-animate opacity-0">
+          <!-- Text -->
+          <div class="md:w-2/3">
+            <h2
+              class="text-dark-blue text-4xl md:text-6xl font-bold mb-5 text-center md:text-left">
+              Legal Will
+            </h2>
+            <ul
+              class="text-gray-500 list-disc text-left text-lg md:text-2xl space-y-2 md:pl-5">
+              <li>Will drafting</li>
+              <li>Customized as per needs</li>
+              <li>Will registration</li>
+            </ul>
+          </div>
+
+          <!-- Icon -->
+          <img
+            src="assets/icons/bx-file-detail.svg"
+            alt="Legal Will"
+            class="w-20 md:w-28 h-20 md:h-40 mb-4 md:mb-0 md:ml-10" />
+        </div>
+        <!-- Card 2 -->
+        <div
+          class="hover:bg-gray-100 bg-white shadow-2xl rounded-4xl p-12 flex flex-col-reverse md:flex-row items-center md:justify-center text-center md:text-left scroll-animate opacity-0">
+          <!-- Text -->
+          <div class="md:w-2/3">
+            <h2
+              class="text-dark-blue text-4xl md:text-6xl font-bold mb-5 text-center md:text-left">
+              Transfer of Property
+            </h2>
+            <ul
+              class="text-gray-500 list-disc text-left text-lg md:text-2xl space-y-2 md:pl-5">
+              <li>Succession certificate support</li>
+              <li>Probate assistance</li>
+              <li>Property transfer formalities</li>
+            </ul>
+          </div>
+
+          <!-- Icon -->
+          <img
+            src="assets/icons/bx-building-house.svg"
+            alt="Legal Will"
+            class="w-20 md:w-28 h-20 md:h-40 mb-4 md:mb-0 md:ml-10" />
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="hover:bg-gray-100 bg-white shadow-2xl rounded-4xl p-12 flex flex-col-reverse md:flex-row items-center md:justify-center text-center md:text-left scroll-animate opacity-0">
+          <!-- Text -->
+          <div class="md:w-2/3">
+            <h2
+              class="text-dark-blue text-4xl md:text-6xl font-bold mb-5 text-center md:text-left">
+              Other Services
+            </h2>
+            <ul
+              class="text-gray-500 list-disc text-left text-lg md:text-2xl space-y-2 md:pl-5">
+              <li>Gift deed services</li>
+              <li>Power of attorney drafting</li>
+              <li>Estate planning advice</li>
+            </ul>
+          </div>
+
+          <!-- Icon -->
+          <img
+            src="assets/icons/bx-people-handshake.svg"
+            alt="Legal Will"
+            class="w-20 md:w-28 h-20 md:h-40 mb-4 md:mb-0 md:ml-10" />
+        </div>
+        <!-- Card 4 -->
+        <div
+          class="hover:bg-gray-100 bg-white shadow-2xl rounded-4xl p-12 flex flex-col-reverse md:flex-row items-center md:justify-center text-center md:text-left scroll-animate opacity-0">
+          <!-- Text -->
+          <div class="md:w-2/3">
+            <h2
+              class="text-dark-blue text-4xl md:text-6xl font-bold mb-5 text-center md:text-left">
+              Private Family Trust
+            </h2>
+            <ul
+              class="text-gray-500 list-disc text-left text-lg md:text-2xl space-y-2 md:pl-5">
+              <li>Asset protection</li>
+              <li>Wealth usage planning</li>
+              <li>Probate-free solutions</li>
+            </ul>
+          </div>
+
+          <!-- Icon -->
+          <img
+            src="assets/icons/bx-seal.svg"
+            alt="Legal Will"
+            class="w-20 md:w-28 h-20 md:h-40 mb-4 md:mb-0 md:ml-10" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section
+      id="contact"
+      class="scroll-animate opacity-0 mt-10 md:mt-40 flex flex-col items-center justify-center p-6 sm:p-10">
+      <div class="w-full max-w-3xl">
+        <h1
+          class="text-4xl sm:text-6xl md:text-8xl font-jockey-one text-dark-blue text-center underline decoration-dark-blue mb-10">
+          CONTACT US
+        </h1>
+
+        <form
+          action="https://formspree.io/f/xldwoqqe"
+          method="POST"
+          class="bg-gray-100 rounded-2xl shadow-lg p-6 sm:p-10 space-y-6 flex flex-col items-center justify-center md:text-2xl">
+          <h2 class="text-lg sm:text-xl md:text-2xl text-center mb-4">
+            Just fill this simple form to reach out to us
+          </h2>
+
+          <!-- Name -->
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="* Your Name"
+            class="w-full font-medium bg-white p-4 rounded-full border border-gray-300 focus:ring-2 focus:ring-dark-blue outline-none transition" />
+
+          <!-- Email -->
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="* Your Email"
+            class="w-full font-medium bg-white p-4 rounded-full border border-gray-300 focus:ring-2 focus:ring-dark-blue outline-none transition" />
+
+          <!-- Phone -->
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Your Phone Number"
+            class="w-full font-medium bg-white p-4 rounded-full border border-gray-300 focus:ring-2 focus:ring-dark-blue outline-none transition" />
+
+          <!-- Message -->
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Your Message..."
+            class="w-full font-medium bg-white p-4 rounded-2xl border border-gray-300 focus:ring-2 focus:ring-dark-blue outline-none transition"></textarea>
+
+          <!-- Button -->
+          <button
+            type="submit"
+            class="w-full sm:w-auto px-8 py-4 bg-dark-blue text-white rounded-full hover:bg-darker-blue font-jockey-one transition">
+            Send Message
+          </button>
+          <div class="flex flex-col text-center w-full m-3 mb-3">
+            <hr />
+            <span class="mx-4 text-gray-600 text-lg md:text-2xl">OR</span>
+            <hr />
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row items-center text-center justify-center gap-3 text-[14px] md:text-xl text-white font-medium m-3">
+            <a
+              class="bg-green-400 flex items-center justify-center rounded-full p-4 transition-transform duration-200 hover:scale-105 shadow-2xl"
+              href="https://wa.me/919702963645"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img
+                width="48"
+                height="48"
+                class="mr-3"
+                src="https://img.icons8.com/color/48/whatsapp--v1.png"
+                alt="whatsapp--v1" />
+              Message on Whatsapp
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sujeet-salkar-4207b548/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-blue-400 flex items-center justify-center rounded-full p-4 transition-transform duration-200 hover:scale-105 shadow-2xl">
+              <img
+                width="48"
+                height="48"
+                class="mr-3"
+                src="https://img.icons8.com/fluency/48/linkedin.png"
+                alt="linkedin" />
+              Message on Linkedin
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="flex flex-col md:flex md:flex-row justify-between items-center bg-dark-blue p-4 mt-10 text-white">
+      <div>
+        <h1>
+          ~2025 Designed and developed by
+          <a
+            href="https://www.linkedin.com/in/shivam-salkar/"
+            class="font-bold">
+            <u>Shivam.</u>
+          </a>
+        </h1>
+      </div>
+
+      <div>
+        <h1>&copy;WillExpert - 2025</h1>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const button = document.getElementById("menu-button");
+    const menu = document.getElementById("menu");
+
+    button.addEventListener("click", () => {
+      // menu.classList.toggle("hidden");
+      menu.classList.toggle("opacity-0");
+      menu.classList.toggle("scale-y-0");
+      menu.classList.toggle("pointer-events-none");
+    });
+
+    // ANIMATION SCROLL
+    const elements = document.querySelectorAll(".scroll-animate");
+
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("opacity-0"); // remove hidden
+            entry.target.classList.add("animate-appear"); // add animation
+            obs.unobserve(entry.target); // run once per element
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+  </script>
+</html>
