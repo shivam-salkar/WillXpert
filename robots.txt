@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://willexpert.net/sitemap.xml
+Sitemap: https://willxpert.net/sitemap.xml
